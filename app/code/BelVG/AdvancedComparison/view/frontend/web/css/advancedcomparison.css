@@ -1,0 +1,8 @@
+td.cell.product.attribute.attribute-highlight {
+    background: #ffecc4;
+}
+
+.icon-star:before {
+    content: "★ ";
+    font-size: 18px;
+}

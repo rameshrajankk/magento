@@ -1,0 +1,30 @@
+<?php
+
+$list = array();
+$head = ['ID', 'Name', 'Level'];
+array_push($list, $head);
+
+//get category factory
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$categories = $objectManager->Create('\Magento\Catalog\Model\ResourceModel\Category\Collection')
+    ->addAttributeToSelect('*')
+    ->addAttributeToSort('path', 'asc');
+foreach ($categories as $category)
+{
+    array_push($list, array(
+        $category->getId() ,
+        $category->getName() ,
+        $category->getLevel()
+    ));
+}
+
+$fp = fopen('var/file.csv', 'wb');
+
+foreach ($list as $fields)
+{
+    fputcsv($fp, $fields);
+}
+
+fclose($fp);
+
+?>

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<!-- <menu>
+		<add id="Salesfilter::top_level" title="Salesfilter" module="Salesfilter_Grid" sortOrder="9999" resource="Magento_Backend::content"/>
+		<add id="Salesfilter_Grid::index_index" title="index index" module="Salesfilter_Grid" sortOrder="9999" resource="Salesfilter_Grid::index_index" parent="Salesfilter::top_level" action="allorders/index/index"/>
+	</menu> -->
+</config>

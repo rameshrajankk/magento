@@ -1,0 +1,24 @@
+{
+  "name": "belvg/module-advancedcomparison",
+  "description": "",
+  "keywords": ["Compare","Advanced Comparison"],
+  "homepage": "http://belvg.com",
+  "type": "magento2-module",
+  "version": "2.0.3",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "email": "store@belvg.com",
+      "name": "BelVG LLC"
+    }
+  ],
+  "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "BelVG\\AdvancedComparison\\": ""
+        }
+  }
+}

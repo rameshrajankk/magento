@@ -1,0 +1,16 @@
+<!--@subject {{trans "Pre Order Request Declined" }} @-->
+{{template config_path="design/email/header_template"}}
+<table>
+    <tr class="email-intro">        
+        <td style="font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;vertical-align:top;">
+            <p style="margin-top:0;margin-bottom:10px">Dear {{var first_name}} {{var last_name}},</p>
+            <p style="margin-top:0;margin-bottom:10px">
+                Thank you for your Pre-order request for {{var product_name}}
+            </p>
+            <p style="margin-top:0;margin-bottom:10px">
+                we're sorry to inform you that your Pre Order request is declined.
+            </p>
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}
